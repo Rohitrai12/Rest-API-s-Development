@@ -1,1 +1,8 @@
-console.log("Welcome to Rest Api with Typescript and Express");
+import app from "./src/app";
+
+const startServer = () => {
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+}
+
+startServer()
