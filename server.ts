@@ -1,0 +1,1 @@
+console.log("Welcome to Rest Api with Typescript and Express");
