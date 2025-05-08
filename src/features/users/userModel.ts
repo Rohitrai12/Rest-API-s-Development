@@ -5,7 +5,7 @@ interface User {
     name: string;
     email: string;
     password: string;
-  }
+}
 
 const userSchema = new mongoose.Schema<User>(
   {
