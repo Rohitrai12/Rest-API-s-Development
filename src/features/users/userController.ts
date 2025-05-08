@@ -70,7 +70,7 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
     }
 
     // Create accesstoken
-    const token = sign({ sub: user._id }, config.jwtSecret as string, {
+    const token = sign({ sub: userExists._id }, config.JWT_SECRET as string, {
         expiresIn: "7d",
         algorithm: "HS256",
     });
